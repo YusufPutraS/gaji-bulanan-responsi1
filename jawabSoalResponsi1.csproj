@@ -1,0 +1,37 @@
+﻿using System;
+
+namespace Responsipemrograman3337
+
+	class Karyawan
+{
+	static void Main(string[] args)
+	{
+
+		Console.WriteLine("NIM" + "Nama" + "		" + "Gaji Bulanan");
+		Karyawan Karyawan1 = new Karyawan(3337, "Yusuf", 2000000);
+		Karyawan Karyawan2 = new Karyawan(3338), "Putra",1000000);
+		Console.WriteLine("1." + Karyawan1.identitas + " " + Karyawan1.nama + "		" + Karyawan1.gaji);
+		Console.WriteLine("2." + Karyawan2.identitas + " " + Karyawan2.nama + "		" + Karyawan2.gaji);
+		if (Karyawan1.gaji <= 0 || Karyawan2.gaji <= 0) ;
+		{
+
+			Console.WriteLine(anda memasukkan gaji minus);
+			Karyawan1.gaji = 0;
+			Karyawan2.gaji = 0;
+			Console.WriteLine("1." + Karyawan1.identitas + " " + Karyawan1.nama + "		" + Karyawan1.gaji);
+			Console.WriteLine("2." + Karyawan2.identitas + " " + Karyawan2.nama + "		" + Karyawan2.gaji);
+		}
+		else
+		{
+			Console.WriteLine("kenaikan gaji 10%||");
+			int tambah = Karyawan1.gaji * 10 / 100;
+			Karyawan1.gaji += tambah;
+			int tambah = Karyawan1.gaji * 10 / 100;
+			Karyawan2.gaji += tambah;
+			Console.WriteLine("1." + Karyawan1.identitas + " " + Karyawan1.nama + "		" + Karyawan1.gaji);
+			Console.WriteLine("2." + Karyawan2.identitas + " " + Karyawan2.nama + "		" + Karyawan2.gaji);
+
+		}
+	}
+
+}
